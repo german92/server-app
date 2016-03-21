@@ -5,7 +5,7 @@ set :use_sudo, false
 set :branch, 'master' # e.g. 'master'
 
 server '127.0.0.1', # e.g. 192.xxx.xxx.xxx
-  roles: [:web, :app, :db],
+  roles: [:web, :app],
   port: fetch(:port),
   user: fetch(:user),
   primary: true
